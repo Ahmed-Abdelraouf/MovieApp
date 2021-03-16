@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1851A5B025FEACED006B0E36 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC70D5C4D128BEDC210A069 /* Pods_MovieApp.framework */; };
 		187F845025FDFF8600857C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F844F25FDFF8600857C10 /* AppDelegate.swift */; };
 		187F845225FDFF8600857C10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F845125FDFF8600857C10 /* SceneDelegate.swift */; };
 		187F845425FDFF8600857C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F845325FDFF8600857C10 /* ViewController.swift */; };
@@ -19,8 +20,6 @@
 		187F847925FE098800857C10 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F847825FE098800857C10 /* AddViewController.swift */; };
 		187F847C25FE0C1800857C10 /* AddProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F847B25FE0C1800857C10 /* AddProtocol.swift */; };
 		187F847F25FE0C3B00857C10 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F847E25FE0C3B00857C10 /* Movie.swift */; };
-		187F848225FE0C4400857C10 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F848125FE0C4400857C10 /* Movies.swift */; };
-		A88B00B9C5592CB1BEC99525 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC70D5C4D128BEDC210A069 /* Pods_MovieApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		187F847825FE098800857C10 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		187F847B25FE0C1800857C10 /* AddProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProtocol.swift; sourceTree = "<group>"; };
 		187F847E25FE0C3B00857C10 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		187F848125FE0C4400857C10 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		799EA21E56E2155161A1FBF3 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F690ACD9EF49997A635A8E80 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
 		FEC70D5C4D128BEDC210A069 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88B00B9C5592CB1BEC99525 /* Pods_MovieApp.framework in Frameworks */,
+				1851A5B025FEACED006B0E36 /* Pods_MovieApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				187F847E25FE0C3B00857C10 /* Movie.swift */,
-				187F848125FE0C4400857C10 /* Movies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187F848225FE0C4400857C10 /* Movies.swift in Sources */,
 				187F847325FE031700857C10 /* MovieTableViewCell.swift in Sources */,
 				187F845425FDFF8600857C10 /* ViewController.swift in Sources */,
 				187F847F25FE0C3B00857C10 /* Movie.swift in Sources */,
@@ -416,6 +412,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MovieApp/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +435,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MovieApp/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

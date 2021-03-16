@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Movie: Codable  {
+class Movie: Codable {
     var title: String
     var image: String
     var rating: Float
@@ -21,12 +21,12 @@ class Movie: Codable  {
         self.releaseYear = realeseYear
         self.genre = genre
     }
-//    enum CodingKeys: String, CodingKey {
-//         case title = "title"
-//         case image = "image"
-//         case rating = "rating"
-//         case releaseYear = "releaseYear"
-//         case genre = "genre"
-//
-//     }
+    enum CodingKeys: String, CodingKey {
+         case title = "title"
+         case image = "image"
+         case rating = "rating"
+         case releaseYear = "releaseYear"
+         case genre = "genre"
+
+     }
 }

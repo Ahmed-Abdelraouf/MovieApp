@@ -1,18 +1,22 @@
 PODS:
+  - ReachabilitySwift (5.0.0)
   - SDWebImage (5.4.0):
     - SDWebImage/Core (= 5.4.0)
   - SDWebImage/Core (5.4.0)
 
 DEPENDENCIES:
+  - ReachabilitySwift
   - SDWebImage
 
 SPEC REPOS:
   trunk:
+    - ReachabilitySwift
     - SDWebImage
 
 SPEC CHECKSUMS:
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
 
-PODFILE CHECKSUM: 3c142918d896b6088b1e18c485d5314dd597abdf
+PODFILE CHECKSUM: 81ea9399fe520766f95f9be8b68616574b2258b5
 
 COCOAPODS: 1.10.1

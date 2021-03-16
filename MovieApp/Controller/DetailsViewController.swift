@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import CoreData
 
 class DetailsViewController: UIViewController {
 
@@ -21,6 +21,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var genreLabel: UILabel!
     
     var movie:Movie?
+    var movieCoreData = NSManagedObject()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +31,20 @@ class DetailsViewController: UIViewController {
             ratingLabel.text = "\(movie.rating)"
             realseLabel.text = "\(movie.releaseYear)"
             genreLabel.text =  movie.genre.joined(separator: ",")
+        }else{
+            titleLabel.text = movieCoreData.value(forKey: "title") as? String
+            movieImageView.sd_setImage(with: URL(string: movieCoreData.value(forKey: "image") as! String), placeholderImage: #imageLiteral(resourceName: "20577349.jpg"))
+            if let val = movieCoreData.value(forKey: "rating") {
+                ratingLabel.text = (val as AnyObject).stringValue
+            }
+            if let val = movieCoreData.value(forKey: "releaseYear") {
+                realseLabel.text = (val as AnyObject).stringValue
+            }
+            var itemGenre:[String]?
+            if let val = movieCoreData.value(forKey: "genre") {
+                itemGenre = (val as! [String])
+            }
+            genreLabel.text = itemGenre![0]
         }
 
     }
